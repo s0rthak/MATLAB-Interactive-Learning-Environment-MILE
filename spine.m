@@ -1,21 +1,23 @@
 function [] = spine()
 
+yaml_file = 'text.yml';
+addpath(genpath('YAMLparser'));
+YamlStruct = ReadYaml(yaml_file);
 pause on;
 
+%Lacks Modularity here
 obj = ExecuteFunctions;
-Task = LessonContent(1,'Today we shall learn about approximation',1);
+Task = LessonContent(YamlStruct.l1.id,YamlStruct.l1.content,YamlStruct.l1.type);
 obj.CheckObjectType(Task);
-Task = LessonContent(2,'Some number terminate after a finite set of digits.For example: 1/2 is equal to 0.5',1);
+Task = LessonContent(YamlStruct.l2.id,YamlStruct.l2.content,YamlStruct.l2.type);
 obj.CheckObjectType(Task);
-Task = LessonContent(3,'Other numbers repeat forever: For example 1/3 = ',4);
+Task = LessonContent(YamlStruct.l3.id,YamlStruct.l3.content,YamlStruct.l3.type);
 obj.CheckObjectType(Task);
-Task = LessonContent(4,1/3,3);
+Task = LessonContent(YamlStruct.l4.id,YamlStruct.l4.content,YamlStruct.l4.type);
 obj.CheckObjectType(Task);
-Task = LessonContent(5,'Now, you do one. What are the first 6 digits of 22/7?\n',2);
+Task = LessonContent(YamlStruct.l5.id,YamlStruct.l5.content,YamlStruct.l5.type);
 obj.CheckObjectType(Task);
 disp('End of Lesson!');
-
-
 
 
 

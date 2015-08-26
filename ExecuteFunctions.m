@@ -41,7 +41,8 @@ classdef ExecuteFunctions
                         obj.ObjectType3(LessonContentobj);
                     case 4
                         obj.ObjectType4(LessonContentobj);
-             end
+            end
+             %Add error handling for different object type
           end
       end
     end
