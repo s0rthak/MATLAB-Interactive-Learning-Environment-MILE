@@ -9,6 +9,20 @@ classdef ExecuteFunctions
         ObjectType = [1 2 3 4];  
      end
     methods 
+        function YamlParseAndPlay(obj)
+            yaml_file = 'text.yml';
+            addpath(genpath('YAMLparser'));
+            YamlStruct = ReadYaml(yaml_file);
+            pause on;
+            YamlStructNames = char(fieldnames(YamlStruct));
+            %Added Modularity to this part
+            
+            for i = 1:length(YamlStructNames)
+                Task = LessonContent(YamlStruct.(YamlStructNames(i,:)).id,YamlStruct.(YamlStructNames(i,:)).content,YamlStruct.(YamlStructNames(i,:)).type);
+                obj.CheckObjectType(Task);
+            end
+            
+        end
        function ObjectType1(~,LessonContentobj)
            disp(LessonContentobj.content);
                 pause;
