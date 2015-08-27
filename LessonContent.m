@@ -1,5 +1,6 @@
+% Class to store Lesson Content after parsing from YAML document
+
 classdef LessonContent %< handle
-    % Class to store Lesson Content after parsing from YAML document
     properties (SetAccess = 'private') %SetObservable)
         index = 0;
         content = '';

@@ -1,9 +1,20 @@
-
 % Type 1 is: Just Display Line
 % Type 2 is: Wait for input prompt
 % Type 3 is: Perform an function
 % Type 4 is: Display without pausing
 
+%Contains a list of functions
+% 1. YamlParseAndPlay for YAML Parsing and Lesson Playing
+% 2. ObjectType(number) : To run a function based on object type
+% 3. CheckObjectType: To check and call relevant ObjectType function
+%Cleanup names of functions
+
+%Can add assert() functions at the beginning of each function
+% Ex: assert(isfloat(train_x), 'train_x must be a float');
+% assert(nargin == 4 || nargin == 6,'number ofinput arguments must be 4 or 6')
+
+
+%Add more comments to better explain the functions and classes
 classdef ExecuteFunctions
      properties (SetAccess = 'private')
         ObjectType = [1 2 3 4];  
@@ -21,6 +32,7 @@ classdef ExecuteFunctions
                 Task = LessonContent(YamlStruct.(YamlStructNames(i,:)).id,YamlStruct.(YamlStructNames(i,:)).content,YamlStruct.(YamlStructNames(i,:)).type);
                 obj.CheckObjectType(Task);
             end
+            pause off;
             
         end
        function ObjectType1(~,LessonContentobj)
