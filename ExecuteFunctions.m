@@ -13,11 +13,17 @@
 % Ex: assert(isfloat(train_x), 'train_x must be a float');
 % assert(nargin == 4 || nargin == 6,'number ofinput arguments must be 4 or 6')
 
+%Would of all of these work on octave as well? Mention the issues that may
+%arise
+%Can possibly put each function into a different file to make the
+%readibility and editing better
+%Explicitly adding the directory of the file in case it is not included in
+%the right place this will be in initMISC file
 
 %Add more comments to better explain the functions and classes
 classdef ExecuteFunctions
      properties (SetAccess = 'private')
-        ObjectType = [1 2 3 4];  
+        ObjectType = [1 2 3 4 5];  
      end
     methods 
         function YamlParseAndPlay(obj)
@@ -56,6 +62,29 @@ classdef ExecuteFunctions
        function ObjectType4(~,LessonContentobj)
             disp(LessonContentobj.content);
        end
+       function ObjectType5(~,LessonContentobj)
+           PlotFieldName =char(fieldnames(LessonContentobj.content));
+            if (DoesFieldExist(PlotFieldName,'x')==1)
+               x=LessonContentobj.content.x;
+               disp('X is here');
+            end
+            if (DoesFieldExist(PlotFieldName,'y')==1)
+            y=LessonContentobj.content.y;
+            disp('Y is here');
+            end
+            if (DoesFieldExist(PlotFieldName,'min')==1)
+                min = LessonContentobj.content.min;
+                disp('Min is here');
+            end
+            if (DoesFieldExist(PlotFieldName,'max')==1)
+                max = LessonContentobj.content.max;
+                disp('Max is here');
+            end
+                
+                
+            
+           
+       end
       function  CheckObjectType(obj,LessonContentobj)
           if any(LessonContentobj.type == obj.ObjectType)   
             switch LessonContentobj.type
@@ -67,6 +96,8 @@ classdef ExecuteFunctions
                         obj.ObjectType3(LessonContentobj);
                     case 4
                         obj.ObjectType4(LessonContentobj);
+                case 5
+                    obj.ObjectType5(LessonContentobj);
             end
              %Add error handling for different object type
           end
