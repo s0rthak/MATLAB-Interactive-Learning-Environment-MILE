@@ -80,9 +80,16 @@ classdef ExecuteFunctions
                 max = LessonContentobj.content.max;
                 disp('Max is here');
             end
-                
-                
-            
+            if(DoesFieldExist(PlotFieldName,'xline')==1)
+                xline = LessonContentobj.content.xline;
+                disp('Xline is here');
+                %Issue, only one is stored
+            end
+            %Check existence of variable
+            if (any(strcmp(who,'y'))==1 && any(strcmp(who,'min'))==1 && any(strcmp(who,'max'))==1)
+                PlotGraph(y,min,max);
+            end
+     
            
        end
       function  CheckObjectType(obj,LessonContentobj)

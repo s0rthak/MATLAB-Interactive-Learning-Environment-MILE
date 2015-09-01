@@ -36,8 +36,10 @@ l6:
   content:
     y: cos(x)
     min: 0
-    max: 5
+    max: 7
     hold: 1
+    xline: 0.5
+
   type: 5
 l7:
   id: 7
