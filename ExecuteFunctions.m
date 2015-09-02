@@ -79,14 +79,14 @@ classdef ExecuteFunctions
            end
            end
             %Check existence of variable
-            if (any(strcmp(who,'y'))==1 && any(strcmp(who,'xmin'))==1 && any(strcmp(who,'xmax'))==1)
+            if (any(strcmp(who,'y')) && any(strcmp(who,'xmin')) && any(strcmp(who,'xmax')))
             PlotGraph(y,xmin,xmax);
             end
             if(any(strcmp(who,'x1'))==1 && any(strcmp(who,'x2'))==1)
                 PlotLines(x1,x2);
                 %What about when either x2 or x1 exists?
             end
-            if (DoesFieldExist(PlotFieldName,'hold')==1)
+            if (DoesFieldExist(PlotFieldName,'hold'))
                 hold on;
             else
                 hold off;
