@@ -21,6 +21,8 @@
 %the right place this will be in initMISC file
 
 %Add more comments to better explain the functions and classes
+
+%Free up variables from memory
 classdef ExecuteFunctions
      properties (SetAccess = 'private')
         ObjectType = [1 2 3 4 5];  
@@ -64,53 +66,32 @@ classdef ExecuteFunctions
        end
        function ObjectType5(~,LessonContentobj)
            PlotFieldName =char(fieldnames(LessonContentobj.content));
-           %Make this modular. Too repetitive
-            if (DoesFieldExist(PlotFieldName,'x')==1)
-               x=LessonContentobj.content.x;
-               disp('X is here');
-            end
-            if (DoesFieldExist(PlotFieldName,'y')==1)
-            y=LessonContentobj.content.y;
-            disp('Y is here');
-            end
-            if (DoesFieldExist(PlotFieldName,'min')==1)
-                min = LessonContentobj.content.min;
-                disp('Min is here');
-            end
-            if (DoesFieldExist(PlotFieldName,'max')==1)
-                max = LessonContentobj.content.max;
-                disp('Max is here');
-            end
-            if(DoesFieldExist(PlotFieldName,'xline')==1)
-                xline = LessonContentobj.content.xline;
-                disp('Xline is here');
-               
-            end
-            if(DoesFieldExist(PlotFieldName,'x1')==1)
-                x1 = LessonContentobj.content.x1;
-                disp('X1 is here');
-            end
-            if(DoesFieldExist(PlotFieldName,'x2')==1)
-                x2 = LessonContentobj.content.x2;  
-            end
+           GraphValues = ['y   ' ;'xmin' ;'xmax' ;'x1  '; 'x2  ';'hold'];
+           %List of all possible Variables
+           %Looping through all values of list
+           for i = 1:length(GraphValues)
+           shortGraphValue = regexprep(GraphValues(i,:),'[^\w'']','');
+           if DoesFieldExist(PlotFieldName,shortGraphValue)==1
+          anonfunc = @() assignin('caller',shortGraphValue(1,:),LessonContentobj.content.(shortGraphValue(1,:)));
+          anonfunc();
+          %Using anon function so that 'caller'  becomes this function
+          %workspace and not the base workspace
+           end
+           end
             %Check existence of variable
-            if (any(strcmp(who,'y'))==1 && any(strcmp(who,'min'))==1 && any(strcmp(who,'max'))==1)
-                PlotGraph(y,min,max);
+            if (any(strcmp(who,'y'))==1 && any(strcmp(who,'xmin'))==1 && any(strcmp(who,'xmax'))==1)
+            PlotGraph(y,xmin,xmax);
             end
             if(any(strcmp(who,'x1'))==1 && any(strcmp(who,'x2'))==1)
                 PlotLines(x1,x2);
                 %What about when either x2 or x1 exists?
             end
-            
             if (DoesFieldExist(PlotFieldName,'hold')==1)
                 hold on;
             else
                 hold off;
             end;
-     
-           clear('y','min','max','x','x1','x2','hold','xline');
-           %Define these in a matrix to make it easier to clear
-           whos;
+                          
        end
       function  CheckObjectType(obj,LessonContentobj)
           if any(LessonContentobj.type == obj.ObjectType)   
@@ -125,6 +106,7 @@ classdef ExecuteFunctions
                         obj.ObjectType4(LessonContentobj);
                 case 5
                     obj.ObjectType5(LessonContentobj);
+                    
             end
              %Add error handling for different object type
           end
