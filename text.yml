@@ -38,11 +38,11 @@ l6:
     min: 0
     max: 7
     hold: 1
-    xline: 0.5
-
+    xline: 2
   type: 5
 l7:
   id: 7
   content:
-    x: 1
+    x1: 3
+    x2: 4
   type: 5
