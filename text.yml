@@ -45,3 +45,9 @@ l7:
     x1: 3
     x2: 4
   type: 5
+l8:
+   id: 8
+   content:
+     message: Here's a video we would like you to watch
+     link: https://youtu.be/Q0Ngp-THWqM 
+   type: 6

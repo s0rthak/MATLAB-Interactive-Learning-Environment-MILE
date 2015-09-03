@@ -84,6 +84,14 @@ classdef ExecuteLessonFromYAML
             end;
                           
        end
+       function ObjectType6(~, LessonContentobj)
+          
+          message = LessonContentobj.content.message;
+          link = LessonContentobj.content.link;
+          disp(strcat(message, ' <a href="',link,'">Video</a>'))
+          pause;
+       end
+       
       function  CheckObjectType(obj,LessonContentobj)  
             switch LessonContentobj.type
                     case 1
@@ -94,8 +102,10 @@ classdef ExecuteLessonFromYAML
                         obj.ObjectType3(LessonContentobj);
                     case 4
                         obj.ObjectType4(LessonContentobj);
-                case 5
-                    obj.ObjectType5(LessonContentobj);
+                    case 5
+                        obj.ObjectType5(LessonContentobj);
+                    case 6 
+                        obj.ObjectType6(LessonContentobj);
                     
             end
              %Add error handling for different object type
