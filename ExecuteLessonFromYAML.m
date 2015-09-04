@@ -84,14 +84,17 @@ classdef ExecuteLessonFromYAML
                 hold on;
             else
                 hold off;
-            end;
-                          
-       end
+            end
+        end
        function ObjectType6(~, LessonContentobj)
           
           message = LessonContentobj.content.message;
           link = LessonContentobj.content.link;
-          disp(strcat(message, ' <a href="',link,'">Video</a>'))
+          ans = input('Would you like to see a video? (y/n): ','s');
+          if ans == 'Y' || ans == 'y'
+          web(link,'-browser');
+          end
+          
           pause;
        end
 %Finds interpoliation of 1D data
@@ -108,15 +111,24 @@ classdef ExecuteLessonFromYAML
         flag=1;
         end
         end
-        %Runs 1D interpolation
-        if flag
+        %Runs 1D interpolation if number of points are same
+         if size(x,2)~=size(y,2)
+            disp('Error in data');
+         elseif flag
+             disp(LessonContentobj.content.message);
+             fprintf('x: ');
+           disp(x);
+           fprintf('y: ');
+           disp(y);
           point = input('Input Interpolation Point: ');
           interp1(x,y,point,method)      
          else
          disp('Wrong method');    
         end
-             
+           pause;  
+           
        end
+       
        
        
       function  CheckObjectType(obj,LessonContentobj)  

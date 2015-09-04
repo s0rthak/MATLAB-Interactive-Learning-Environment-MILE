@@ -4,6 +4,9 @@ yml = ParserYAML();
 [yml, names] = yml.ReturnYAML();
 
 tic %Start of timer
+set(0,'DefaultFigureWindowStyle','docked');
+%Makes all figures docked by default
+
 obj = ExecuteLessonFromYAML(yml, names);
 
 disp('End of Lesson!');
