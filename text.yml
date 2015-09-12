@@ -3,8 +3,6 @@
 #Type 3:
 #Type 4:
 #Type 5: Graph
-#Type 6: Video Links
-#Type 7: 2 Variable Array
 
 
 
@@ -53,13 +51,3 @@ l8:
      message: Here's a video we would like you to watch
      link: https://youtu.be/Q0Ngp-THWqM 
    type: 6
-l9:
-  id: 9
-  content:
-    message: Try out interpolation of any point in the table
-    x: [0 1 2 3 4 5 6 7 8 9 10]
-    y: [0 1 4 9 16 25 36 49 64 81 100]
-    method: spline
-  type: 7
-
-
