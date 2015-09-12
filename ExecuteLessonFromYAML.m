@@ -3,11 +3,10 @@
 % Type 3 is: Perform an function
 % Type 4 is: Display without pausing
 
-%Contains a list of functions
-% 1. YamlParseAndPlay for YAML Parsing and Lesson Playing
-% 2. ObjectType(number) : To run a function based on object type
-% 3. CheckObjectType: To check and call relevant ObjectType function
-%Cleanup names of functions
+%Methods
+    %ExecuteLessonFromYAML() : Object Constructor
+    %CallLesson() :  Calls the lesson. 
+                    %eg : 1. CallLesson(
 
 %Can add assert() functions at the beginning of each function
 % Ex: assert(isfloat(train_x), 'train_x must be a float');
@@ -24,16 +23,40 @@
 
 %Free up variables from memory
 classdef ExecuteLessonFromYAML
-     
+     properties
+         YAMLStruct;
+         YAMLStructNames;
+         LessonQueue;
+     end
     methods 
-        function obj = ExecuteLessonFromYAML(YamlStruct, YamlStructNames)
-            for i = 1:length(YamlStructNames)
-                Task = LessonContent(YamlStruct.(YamlStructNames(i,:)).id,YamlStruct.(YamlStructNames(i,:)).content,YamlStruct.(YamlStructNames(i,:)).type);
+        %constructor
+      
+        
+        function CallLesson(obj, indicator)
+            
+            if indicator == 0
+                obj.ExecuteAll();
+            else
+                obj.ExecuteAll(indicator);
+            end
+        end
+        
+        
+        function ExecuteAll(obj)
+            while (~obj.LessonQueue.IsEmpty())
+                a = obj.LessonQueue.ExtractMin();
+                obj.ExecuteLesson(a);
+            end
+        end
+        
+        function ExecuteLesson(obj,pointer)
+            
+            if pointer
+                Task = LessonContent(obj.YAMLStruct.(obj.YAMLStructNames(pointer,:)).id,obj.YAMLStruct.(obj.YAMLStructNames(pointer,:)).content,obj.YAMLStruct.(obj.YAMLStructNames(pointer,:)).type);
                 obj.CheckObjectType(Task);
             end
-            pause off;
-            
         end
+            
        function ObjectType1(~,LessonContentobj)
            disp(LessonContentobj.content);
                 pause;
@@ -73,7 +96,7 @@ classdef ExecuteLessonFromYAML
             if (any(strcmp(who,'y')) && any(strcmp(who,'xmin')) && any(strcmp(who,'xmax')))
             PlotGraph(y,xmin,xmax);
             end
-            if(any(strcmp(who,'x1'))==1 && any(strcmp(who,'x2'))==1)
+            if(any(strcmp(who,'x1')) && any(strcmp(who,'x2')))
                 PlotLines(x1,x2);
                 %What about when either x2 or x1 exists?
             end
@@ -110,6 +133,12 @@ classdef ExecuteLessonFromYAML
             end
              %Add error handling for different object type
       end
+      function obj = ExecuteLessonFromYAML(YAMLStruct, YAMLStructNames, LessonQueue)
+            obj.YAMLStruct = YAMLStruct;
+            obj.YAMLStructNames = YAMLStructNames;
+            obj.LessonQueue = LessonQueue;
+            obj.CallLesson(0);
+        end
     end
 end
           
