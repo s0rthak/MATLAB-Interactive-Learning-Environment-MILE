@@ -2,6 +2,9 @@
 % Type 2 is: Wait for input prompt
 % Type 3 is: Perform an function
 % Type 4 is: Display without pausing
+% Type 5 is: Graphs
+% Type 6 is: Video Links
+% Type 7 is: 2 Variable Array
 
 %Methods
     %ExecuteLessonFromYAML() : Object Constructor
@@ -111,11 +114,48 @@ classdef ExecuteLessonFromYAML
           
           message = LessonContentobj.content.message;
           link = LessonContentobj.content.link;
-          disp(strcat(message, ' <a href="',link,'">Video</a>'))
+          ans = input('Would you like to see a video? (y/n): ','s');
+          if ans == 'Y' || ans == 'y'
+          web(link,'-browser');
+          end
+          
           pause;
        end
        
+       %Finds interpoliation of 1D data
+       function ObjectType7(~,LessonContentobj)
+       %Gets x y and method from YAML 
+        AllowedMethods = ['linear  ';'spline  ';'cubic   ';'nearest ';'next    ';'previous';'pchip   '];
+        x = str2num(char(LessonContentobj.content.x));
+        y = str2num(char(LessonContentobj.content.y));
+        method = LessonContentobj.content.method;
+        %Authenticates the method
+        flag=0;
+        for i = 1:size(AllowedMethods,1)
+        if (strcmp(method,regexprep(AllowedMethods(i,:),'[^\w'']','')));
+        flag=1;
+        end
+        end
+        %Runs 1D interpolation if number of points are same
+         if size(x,2)~=size(y,2)
+            disp('Error in data');
+         elseif flag
+             disp(LessonContentobj.content.message);
+             fprintf('x: ');
+           disp(x);
+           fprintf('y: ');
+           disp(y);
+          point = input('Input Interpolation Point: ');
+          interp1(x,y,point,method)      
+         else
+         disp('Wrong method');    
+        end
+           pause;  
+           
+       end
+       
       function  CheckObjectType(obj,LessonContentobj)  
+              %Is there any way to reduce the number of lines in switch?
             switch LessonContentobj.type
                     case 1
                         obj.ObjectType1(LessonContentobj);
@@ -129,6 +169,8 @@ classdef ExecuteLessonFromYAML
                         obj.ObjectType5(LessonContentobj);
                     case 6 
                         obj.ObjectType6(LessonContentobj);
+                case 7
+                    obj.ObjectType7(LessonContentobj);
                     
             end
              %Add error handling for different object type
