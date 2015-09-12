@@ -6,11 +6,6 @@
 % Type 6 is: Video Links
 % Type 7 is: 2 Variable Array
 
-%Contains a list of functions
-% 1. YamlParseAndPlay for YAML Parsing and Lesson Playing
-% 2. ObjectType(number) : To run a function based on object type
-% 3. CheckObjectType: To check and call relevant ObjectType function
-%Cleanup names of functions
 
 %Can add assert() functions at the beginning of each function
 % Ex: assert(isfloat(train_x), 'train_x must be a float');
@@ -27,16 +22,7 @@
 
 %Free up variables from memory
 classdef ExecuteLessonFromYAML
-     
-    methods 
-        function obj = ExecuteLessonFromYAML(YamlStruct, YamlStructNames)
-            for i = 1:length(YamlStructNames)
-                Task = LessonContent(YamlStruct.(YamlStructNames(i,:)).id,YamlStruct.(YamlStructNames(i,:)).content,YamlStruct.(YamlStructNames(i,:)).type);
-                obj.CheckObjectType(Task);
-            end
-            pause off;
-            
-        end
+
        function ObjectType1(~,LessonContentobj)
            disp(LessonContentobj.content);
                 pause;
@@ -76,7 +62,7 @@ classdef ExecuteLessonFromYAML
             if (any(strcmp(who,'y')) && any(strcmp(who,'xmin')) && any(strcmp(who,'xmax')))
             PlotGraph(y,xmin,xmax);
             end
-            if(any(strcmp(who,'x1'))==1 && any(strcmp(who,'x2'))==1)
+            if(any(strcmp(who,'x1')) && any(strcmp(who,'x2')))
                 PlotLines(x1,x2);
                 %What about when either x2 or x1 exists?
             end
