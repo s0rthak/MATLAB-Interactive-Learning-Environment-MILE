@@ -1,0 +1,10 @@
+#To- do
+
+1. Lesson Progress State and Possibility of Going back to earlier message
+2. Bisection Method content
+3. YAML parsing using python (Check whether the library/toolbox is available in college computers and if not, whether it can be remotely downloaded)
+4. Sets to prevent duplicates
+5. Making the process of dynamic matrix size allocation (not wanting to use 'Name     ')
+6. Possibility of making the structure into arrays to make search and traversal faster.
+7. General improvements in Speed of the code
+8. Creating delightful "human-like" UI
