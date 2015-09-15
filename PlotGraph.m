@@ -8,3 +8,5 @@ ezplot(y,[min,max]);
 
 % I can pass a one variable function
 %I can also pass limits
+%Issue: Does not move to the window is it is already opened from a previous
+%run
