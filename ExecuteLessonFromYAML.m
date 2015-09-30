@@ -1,4 +1,4 @@
-% Type 1 is: Just Display Line
+ % Type 1 is: Just Display Line
 % Type 2 is: Wait for input prompt
 % Type 3 is: Perform an function
 % Type 4 is: Display without pausing
@@ -62,24 +62,29 @@ classdef ExecuteLessonFromYAML
             
        function ObjectType1(~,LessonContentobj)
            disp(LessonContentobj.content);
-                pause;
+           fprintf('\n');
+           pause;
        end
        function ObjectType2(~,LessonContentobj)
-           prompt = LessonContentobj.content;
-                x = input(prompt);
-                if(x==3.14285)
+                prompt = LessonContentobj.content.message;
+                x = input(strcat(prompt,': \n'));
+                if(x==LessonContentobj.content.answer)
                     fprintf('Correct!\n');
                     else
-                    disp('Incorrect. The correct answer is 3.14285');
+                    disp('Incorrect. The correct answer is: ');
+                    disp(LessonContentobj.content.answer);
                 end
-                %Correct this to make it general after YAML integration
+                fprintf('\n');
+               
        end
-       function ObjectType3(~,LessonContentobj)
+       function ObjectType3(~,LessonContentobj) %Fix this type
            fprintf('%f...\n',LessonContentobj.content);
+           fprintf('\n');
                 pause;
        end
        function ObjectType4(~,LessonContentobj)
-            disp(LessonContentobj.content);
+            disp(LessonContentobj.content); %Can be merged with Type 1 with addn parameter of don't wait
+            fprintf('\n');
        end
        function ObjectType5(~,LessonContentobj)
            PlotFieldName =char(fieldnames(LessonContentobj.content));
@@ -102,19 +107,23 @@ classdef ExecuteLessonFromYAML
             if(any(strcmp(who,'x1')) && any(strcmp(who,'x2')))
                 PlotLines(x1,x2);
                 %What about when either x2 or x1 exists?
+            elseif (any(strcmp(who,'x1')))
+                PlotLines(x1);
             end
             if (DoesFieldExist(PlotFieldName,'hold'))
                 hold on;
             else
                 hold off;
             end;
+            pause;
                           
        end
        function ObjectType6(~, LessonContentobj)
           
           message = LessonContentobj.content.message;
           link = LessonContentobj.content.link;
-          ans = input('Would you like to see a video? (y/n): ','s');
+          disp(message);
+          ans = input('Would you like to see the video? (y/n): ','s');
           if ans == 'Y' || ans == 'y'
           web(link,'-browser');
           end

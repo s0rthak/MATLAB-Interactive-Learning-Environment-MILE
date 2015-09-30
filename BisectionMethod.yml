@@ -1,0 +1,558 @@
+#Bisection Method
+
+#Type 1: Line and a pause
+#Type 2: Input
+#Type 3: Number
+#Type 4: No pause in line
+#Type 5: Graph
+#Type 6: Video Links
+#Type 7: 2 Variable Array
+
+
+
+l01:
+  id: 1
+  content: "Bisection Method is a type of Bracketing Method"
+  type: 1
+
+l02:
+  id: 2
+  content: "It is based on the idea of continuity of a function"
+  type: 1
+
+l03:
+  id: 3
+  content:
+    message: "Each continuous function follows the Intermediate Value Theorem. We have a video for you if you need a refresher on IVT"
+    link: https://youtu.be/ufFla_aAHFU
+  type: 6
+
+l04:
+  id: 4
+  content: "In Bisection Method, we first start with an interval where we know a root exists"
+  type: 1
+
+
+l06:
+  id: 1
+  content: "Let us consider x^3 - x -2"
+  type: 1
+
+l07:
+  id: 7
+  content:
+    y:  x^3 -x-2
+    xmin: -5
+    xmax: 5
+    hold: 1
+  type: 5
+
+l08:
+  id: 8
+  content: "By plotting the graph, we can see that a root exists between -2 and 2"
+  type: 1
+
+l11:
+  id: 11
+  content:
+    x1: -2
+    x2: 2
+  type: 5
+
+l18:
+  id: 18
+  content: "But, the root can be ANYWHERE between -2 and +2"
+  type: 1
+
+l19:
+  id: 19
+  content: "And we want to reduce this interval of uncertainty"
+  type: 1
+
+l20:
+  id: 20
+  content: "So we divide the interval in the middle"
+  type: 1
+
+l99: 
+  id: 99
+  content:
+    x1: 0 
+  type: 5
+
+l21:
+  id: 21
+  content: "This is where the 'bi-' part comes from. Bisection = Two sections. It is sometimes also called the interval halving method"
+  type: 1
+
+l97:
+  id: 97
+  content: "Now we'll check if the midpoint is the root. We can see that f(0)= -2. So it is not a root."
+  type: 1
+
+l98:
+  id: 98
+  content: "What now?"
+  type: 1
+
+l40:
+  id: 40
+  content: "We repeat this procedure and we stop when the mid-point we have chosen is a root of the function"
+  type: 1
+
+l41:
+  id: 41
+  content: "But that is seldom the case. Yeah, bummer."
+  type: 1 
+
+l42:
+  id: 42
+  content: "So we repeat the whole process till the interval is small enough"
+  type: 1 
+
+l43:
+  id: 43
+  content: "...or till we find the root"
+  type: 1 
+
+l44:
+  id: 44
+  content: "....which we usually don't"
+  type: 1
+
+l45:
+  id: 45
+  content: "....so we stop the process when we are satisfied"
+  type: 1 
+
+l46:
+  id: 46
+  content: "Well, yeah"
+  type: 1
+
+l47:
+  id: 47
+  content: "What do we mean by satisfied?"
+  type: 1
+
+l48:
+  id: 48
+  content: "An example shall explain"
+  type: 1
+
+l49:
+  id: 49
+  content: "Let us see the solution for the next 5 iterations."
+  type: 1 
+
+a51:
+  id: 51
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 0
+    x2: 2
+  type: 5
+
+a03: 
+  id: 99
+  content:
+    x1: 1 
+  type: 5
+
+l51:
+  id: 51
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1
+    x2: 2
+  type: 5
+
+a04: 
+  id: 99
+  content:
+    x1: 1.5 
+  type: 5
+
+
+a05:
+  id: 52
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.5
+    x2: 2
+  type: 5
+
+a06: 
+  id: 99
+  content:
+    x1: 1.75 
+  type: 5
+
+l53:
+  id: 53
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.5
+    x2: 1.75
+  type: 5
+
+a07: 
+  id: 99
+  content:
+    x1: 1.625 
+  type: 5
+
+l54:
+  id: 54
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.625
+    x2: 1.5
+  type: 5
+
+a77: 
+  id: 99
+  content:
+    x1: 1.5625 
+  type: 5
+
+
+l55:
+  id: 55
+  content: "Now we can stop. NO, but surely we must go on. Let's adjust the graph scales to see what happens"
+  type: 1
+
+l56:
+  id: 56
+  content:
+    y: x^3 - x -2
+    xmin: 1.5
+    xmax: 1.6
+    x1: 1.5625
+    x2: 1.5
+  type: 5
+
+a08: 
+  id: 99
+  content:
+    x1: 1.53125 
+  type: 5
+
+l57:
+  id: 57
+  content:
+    y: x^3 - x -2
+    xmin: 1.5
+    xmax: 1.6
+    x1: 1.53125
+    x2: 1.5
+  type: 5
+
+a09: 
+  id: 99
+  content:
+    x1: 1.515625 
+  type: 5
+
+l58:
+  id: 58
+  content:
+    y: x^3 - x -2
+    xmin: 1.5
+    xmax: 1.6
+    x1: 1.515625 
+    x2: 1.53125
+  type: 5
+
+a07: 
+  id: 99
+  content:
+    x1: 1.523438 
+  type: 5
+
+l59:
+  id: 59
+  content:
+    y: x^3 - x -2
+    xmin: 1.5
+    xmax: 1.6
+    x1: 1.515625 
+    x2: 1.523438
+  type: 5
+
+a07: 
+  id: 99
+  content:
+    x1: 1.519531 
+  type: 5
+
+l60:
+  id: 60
+  content:
+    y: x^3 - x -2
+    xmin: 1.5
+    xmax: 1.6
+    x1: 1.519531 
+    x2: 1.5123438 
+  type: 5
+
+a08: 
+  id: 99
+  content:
+    x1: 1.521484 
+  type: 5
+
+l61:
+  id: 61
+  content: "You would say, now we can stop. No, let's go further. Notice the adjusted scale"
+  type: 1
+
+l62:
+  id: 62
+  content:
+    y: x^3 - x -2
+    xmin: 1.519
+    xmax: 1.522
+    x1: 1.519531 
+    x2: 1.521484 
+  type: 5
+
+a09: 
+  id: 99
+  content:
+    x1: 1.520508 
+  type: 5
+
+l63:
+  id: 63
+  content:
+    y: x^3 - x -2
+    xmin: 1.519
+    xmax: 1.522
+    x1: 1.520508 
+    x2: 1.521484 
+  type: 5
+
+a10: 
+  id: 99
+  content:
+    x1: 1.520996 
+  type: 5
+
+l64:
+  id: 64
+  content:
+    y: x^3 - x -2
+    xmin: 1.519
+    xmax: 1.522
+    x1: 1.520996 
+    x2: 1.521484 
+  type: 5
+
+a11: 
+  id: 99
+  content:
+    x1: 1.521240 
+  type: 5
+
+l65:
+  id: 65
+  content:
+    y: x^3 - x -2
+    xmin: 1.519
+    xmax: 1.522
+    x1: 1.521240 
+    x2: 1.521484 
+  type: 5
+
+a12: 
+  id: 99
+  content:
+    x1: 1.521362 
+  type: 5
+
+l66:
+  id: 66
+  content:
+    y: x^3 - x -2
+    xmin: 1.519
+    xmax: 1.522
+    x1: 1.521362 
+    x2: 1.521484
+  type: 5
+
+a13: 
+  id: 99
+  content:
+    x1: 1.521423 
+  type: 5
+
+l67:
+  id: 67
+  content: "What about now? EVEN MORE. Keep looking at the scale"
+  type: 1
+
+l68:
+  id: 68
+  content:
+    y: x^3 - x -2
+    xmin: 1.5213
+    xmax: 1.5215
+    x1: 1.521362 
+    x2: 1.521423 
+  type: 5
+
+a14: 
+  id: 99
+  content:
+    x1: 1.521393 
+  type: 5
+
+l69:
+  id: 69
+  content:
+    y: x^3 - x -2
+    xmin: 1.5213
+    xmax: 1.5215
+    x1: 1.521362 
+    x2: 1.521393 
+  type: 5
+
+a15: 
+  id: 99
+  content:
+    x1: 1.521378 
+  type: 5
+
+l70:
+  id: 70
+  content:
+    y: x^3 - x -2
+    xmin: 1.5213
+    xmax: 1.5215
+    x1: 1.521378 
+    x2: 1.521393 
+  type: 5
+
+a16: 
+  id: 99
+  content:
+    x1: 1.521385 
+  type: 5
+
+l71:
+  id: 71
+  content:
+    y: x^3 - x -2
+    xmin: 1.5213
+    xmax: 1.5215
+    x1: 1.521378 
+    x2: 1.521385
+  type: 5
+
+a17: 
+  id: 99
+  content:
+    x1: 1.521381 
+  type: 5
+
+l72:
+  id: 72
+  content:
+    y: x^3 - x -2
+    xmin: 1.5213
+    xmax: 1.5215
+    x1: 1.521378 
+    x2: 1.521385
+  type: 5
+
+a18: 
+  id: 99
+  content:
+    x1: 1.521379 
+  type: 5
+
+l73:
+  id: 73
+  content: "It's becoming pointless. But let's still go further. Look at the scales again"
+  type: 1
+
+l74:
+  id: 74
+  content:
+    y: x^3 - x -2
+    xmin: 1.52137
+    xmax: 1.52139
+    x1: 1.521379 
+    x2: 1.521381 
+  type: 5
+
+a19: 
+  id: 99
+  content:
+    x1: 1.521380 
+  type: 5
+
+l75:
+  id: 75
+  content:
+    y: x^3 - x -2
+    xmin: 1.52137
+    xmax: 1.52139
+    x1: 1.521379 
+    x2: 1.521380 
+  type: 5
+
+a20: 
+  id: 99
+  content:
+    x1: 1.521380 
+  type: 5
+
+l76:
+  id: 76
+  content:
+    y: x^3 - x -2
+    xmin: 1.52137
+    xmax: 1.52139
+    x1: 1.521379 
+    x2: 1.521380 
+  type: 5
+
+a21: 
+  id: 99
+  content:
+    x1: 1.521380 
+  type: 5
+
+l77:
+  id: 77
+  content:
+    y: x^3 - x -2
+    xmin: 1.52137
+    xmax: 1.52139
+    x1: 1.521380 
+    x2: 1.521380
+  type: 5
+
+a22: 
+  id: 99
+  content:
+    x1: 1.521380 
+  type: 5
+
+
+l79:
+  id: 79
+  content: "Okay let's stop here"
+  type: 1
