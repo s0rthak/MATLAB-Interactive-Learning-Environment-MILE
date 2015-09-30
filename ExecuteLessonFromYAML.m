@@ -1,10 +1,11 @@
- % Type 1 is: Just Display Line
+% Type 1 is: Just Display Line
 % Type 2 is: Wait for input prompt
 % Type 3 is: Perform an function
 % Type 4 is: Display without pausing
 % Type 5 is: Graphs
 % Type 6 is: Video Links
 % Type 7 is: 2 Variable Array
+% Type 8 is: Shaded Area Pair
 
 %Methods
     %ExecuteLessonFromYAML() : Object Constructor
@@ -162,6 +163,12 @@ classdef ExecuteLessonFromYAML
            pause;  
            
        end
+       function ObjectType8(~,LessonContentobj)
+            x1 = LessonContentobj.content.x1;
+            x2 = LessonContentobj.content.x2;
+            x3 = LessonContentobj.content.x3;
+            Shade(x1,x2,x3);
+        end
        
       function  CheckObjectType(obj,LessonContentobj)  
               %Is there any way to reduce the number of lines in switch?
@@ -180,6 +187,8 @@ classdef ExecuteLessonFromYAML
                         obj.ObjectType6(LessonContentobj);
                 case 7
                     obj.ObjectType7(LessonContentobj);
+                case 8
+                    obj.ObjectType8(LessonContentobj);
                     
             end
              %Add error handling for different object type

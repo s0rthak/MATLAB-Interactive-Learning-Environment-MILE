@@ -7,7 +7,7 @@
 #Type 5: Graph
 #Type 6: Video Links
 #Type 7: 2 Variable Array
-
+#Type 8: Shaded Area Pair
 
 
 l01:
@@ -140,6 +140,12 @@ l48:
   content: "An example shall explain"
   type: 1
 
+
+a53:
+  id: 54
+  content: "Note: we'll get to the mathematics of Bisection Method in a while. Feel the method first though."
+  type: 1
+
 l49:
   id: 49
   content: "Let us see the solution for the next 5 iterations."
@@ -161,6 +167,14 @@ a03:
     x1: 1 
   type: 5
 
+b04:
+  id: 56
+  content:
+    x1: 0
+    x2: 1
+    x3: 2
+  type: 8
+
 l51:
   id: 51
   content:
@@ -177,6 +191,13 @@ a04:
     x1: 1.5 
   type: 5
 
+b06:
+  id: 56
+  content:
+    x1: 1
+    x2: 1.5
+    x3: 2
+  type: 8
 
 a05:
   id: 52
@@ -188,11 +209,24 @@ a05:
     x2: 2
   type: 5
 
+b49:
+  id: 49
+  content: "How do we know where the root lies? We'll get to that later"
+  type: 1 
+
 a06: 
   id: 99
   content:
     x1: 1.75 
   type: 5
+
+b07:
+  id: 56
+  content:
+    x1: 2
+    x2: 1.75
+    x3: 1.5
+  type: 8
 
 l53:
   id: 53
@@ -210,6 +244,14 @@ a07:
     x1: 1.625 
   type: 5
 
+b08:
+  id: 56
+  content:
+    x1: 1.75
+    x2: 1.625
+    x3: 1.5
+  type: 8
+
 l54:
   id: 54
   content:
@@ -226,6 +268,13 @@ a77:
     x1: 1.5625 
   type: 5
 
+b09:
+  id: 56
+  content:
+    x1: 1.625
+    x2: 1.5625
+    x3: 1.5
+  type: 8
 
 l55:
   id: 55
@@ -248,6 +297,14 @@ a08:
     x1: 1.53125 
   type: 5
 
+b10:
+  id: 56
+  content:
+    x1: 1.5625
+    x2: 1.53125
+    x3: 1.5
+  type: 8
+
 l57:
   id: 57
   content:
@@ -263,6 +320,14 @@ a09:
   content:
     x1: 1.515625 
   type: 5
+
+b11:
+  id: 56
+  content:
+    x1: 1.5
+    x2: 1.515625
+    x3: 1.53125
+  type: 8
 
 l58:
   id: 58
@@ -280,6 +345,14 @@ a07:
     x1: 1.523438 
   type: 5
 
+b12:
+  id: 56
+  content:
+    x1: 1.53125
+    x2: 1.523438
+    x3: 1.515625
+  type: 8
+
 l59:
   id: 59
   content:
@@ -296,6 +369,14 @@ a07:
     x1: 1.519531 
   type: 5
 
+b13:
+  id: 56
+  content:
+    x1: 1.515625
+    x2: 1.519531
+    x3: 1.523438
+  type: 8
+
 l60:
   id: 60
   content:
@@ -303,7 +384,7 @@ l60:
     xmin: 1.5
     xmax: 1.6
     x1: 1.519531 
-    x2: 1.5123438 
+    x2: 1.523438 
   type: 5
 
 a08: 
@@ -311,6 +392,14 @@ a08:
   content:
     x1: 1.521484 
   type: 5
+
+b14:
+  id: 56
+  content:
+    x1: 1.523438
+    x2: 1.521484
+    x3: 1.519531
+  type: 8
 
 l61:
   id: 61
@@ -333,6 +422,14 @@ a09:
     x1: 1.520508 
   type: 5
 
+b15:
+  id: 56
+  content:
+    x1: 1.519531
+    x2: 1.520508
+    x3: 1.52484
+  type: 8
+
 l63:
   id: 63
   content:
@@ -348,6 +445,14 @@ a10:
   content:
     x1: 1.520996 
   type: 5
+
+b16:
+  id: 56
+  content:
+    x1: 1.520508
+    x2: 1.520996
+    x3: 1.521484
+  type: 8
 
 l64:
   id: 64
@@ -365,6 +470,14 @@ a11:
     x1: 1.521240 
   type: 5
 
+b17:
+  id: 56
+  content:
+    x1: 1.520996
+    x2: 1.521240
+    x3: 1.521484
+  type: 8
+
 l65:
   id: 65
   content:
@@ -381,6 +494,14 @@ a12:
     x1: 1.521362 
   type: 5
 
+b18:
+  id: 56
+  content:
+    x1: 1.521240
+    x2: 1.521362
+    x3: 1.521484
+  type: 8
+
 l66:
   id: 66
   content:
@@ -396,6 +517,14 @@ a13:
   content:
     x1: 1.521423 
   type: 5
+
+b19:
+  id: 56
+  content:
+    x1: 1.521484
+    x2: 1.521423
+    x3: 1.521368
+  type: 8
 
 l67:
   id: 67
@@ -418,6 +547,14 @@ a14:
     x1: 1.521393 
   type: 5
 
+b20:
+  id: 56
+  content:
+    x1: 1.521423
+    x2: 1.521393
+    x3: 1.521392
+  type: 8
+
 l69:
   id: 69
   content:
@@ -433,6 +570,14 @@ a15:
   content:
     x1: 1.521378 
   type: 5
+
+b21:
+  id: 56
+  content:
+    x1: 1.521362
+    x2: 1.521378
+    x3: 1.521393
+  type: 8
 
 l70:
   id: 70
@@ -450,6 +595,14 @@ a16:
     x1: 1.521385 
   type: 5
 
+b22:
+  id: 56
+  content:
+    x1: 1.521393
+    x2: 1.521385
+    x3: 1.521378
+  type: 8
+
 l71:
   id: 71
   content:
@@ -466,6 +619,14 @@ a17:
     x1: 1.521381 
   type: 5
 
+b23:
+  id: 56
+  content:
+    x1: 1.521385
+    x2: 1.521381
+    x3: 1.521378
+  type: 8
+
 l72:
   id: 72
   content:
@@ -473,7 +634,7 @@ l72:
     xmin: 1.5213
     xmax: 1.5215
     x1: 1.521378 
-    x2: 1.521385
+    x2: 1.521381
   type: 5
 
 a18: 
@@ -481,6 +642,14 @@ a18:
   content:
     x1: 1.521379 
   type: 5
+
+b24:
+  id: 56
+  content:
+    x1: 1.521378
+    x2: 1.521379
+    x3: 1.521381
+  type: 8
 
 l73:
   id: 73
@@ -503,6 +672,14 @@ a19:
     x1: 1.521380 
   type: 5
 
+b24:
+  id: 56
+  content:
+    x1: 1.521381
+    x2: 1.521380
+    x3: 1.521379
+  type: 8
+
 l75:
   id: 75
   content:
@@ -519,40 +696,245 @@ a20:
     x1: 1.521380 
   type: 5
 
-l76:
-  id: 76
-  content:
-    y: x^3 - x -2
-    xmin: 1.52137
-    xmax: 1.52139
-    x1: 1.521379 
-    x2: 1.521380 
-  type: 5
-
-a21: 
-  id: 99
-  content:
-    x1: 1.521380 
-  type: 5
-
-l77:
-  id: 77
-  content:
-    y: x^3 - x -2
-    xmin: 1.52137
-    xmax: 1.52139
-    x1: 1.521380 
-    x2: 1.521380
-  type: 5
-
-a22: 
-  id: 99
-  content:
-    x1: 1.521380 
-  type: 5
-
-
 l79:
   id: 79
   content: "Okay let's stop here"
   type: 1
+
+l80:
+  id: 80
+  content: "What is small enough? So when do we stop?"
+  type: 1
+
+l81:
+  id: 81
+  content: "Whenever you've found the solution to sufficient decimal places"
+  type: 1
+
+l82:
+  id: 82
+  content: "Sometimes we get lucky and find the exact root (At a point when f(c) = 0)  THis is the case with finite non-repeating roots"
+  type: 1
+
+l83:
+  id: 83
+  content: "Otherwise, we are satisfied when the solution is correct up to a few decimal places"
+  type: 1
+
+l84:
+  id: 84
+  content: "For infinite decimal numbers, there will always be some error/tolerance limit"
+  type: 1
+
+l85:
+  id: 85
+  content: "It will take infinite time to find inifite decimal points so we say after a stage:  'This is enough for our work'"
+  type: 1
+
+l86:
+  id: 86
+  content: "And the error is too small to be neglected for practical purposes"
+  type: 1
+
+l87:
+  id: 87
+  content: "The biggest error there can be will be the length of the interval"
+  type: 1
+
+l88:
+  id: 88
+  content:
+    message: "To learn more about error analysis, go to http://en.wikipedia.org/wiki/Bisection_method#Analysis"
+  type: 1
+
+
+
+# l09:
+#   id: 9
+#   content: "Plotting graphs is a great way to figure out your initial guess. Here our initial guess is 0, the midpoint of the interval we chose."
+#   type: 1
+
+# l96:
+#   id:96
+#   content: "But we cannot always draw the graph to find our initial guess. It's too time-consuming. So let us use some math."
+
+# l14:
+#   id: 14
+#   content: "A quick way to figure out if a root lies in the interval (or bracket) is to see if the product of values of polynomial (or function) at both end points is less than zero or not"
+#   type: 1
+
+# l15:
+#   id: 15
+#   content: "i.e. if the interval is [a,b] then f(a).f(b) < 0 tells us that the value of the function at a and at b is opposite"
+#   type: 1
+
+# l17:
+#   id: 17
+#   content: "Since the function has opposite signs at the end points, and since it is continuous, by Intermediate Value Theorem, it must have passed through a point at which y=0 in the interval [a,b]"
+#   type: 1
+
+# l96:
+#   id: 96
+#   content: "Hence if f(a).f(b) <0, then at least one root lies in the interval [a,b]"
+
+# l12:
+#   id: 12
+#   content: "f(-2) = -ve and f(2) = +ve in our example. f(-2).f(2) = -ve. Let's find the root now"
+#   type: 1
+
+
+# l24:
+#   id: 24
+#   content: "Repeating the same procedure. We split the interval into two at the midpoint 0."
+#   type: 1
+
+##Actually repeat the procedure for this
+
+# l22:
+#   id: 22
+#   content: "Now we know that either the root will lie in the left half or in the right half,  since we chose the bracket in such a way that there is just one root."
+#   type: 1
+
+# l23:
+#   id: 23
+#   content: " Let's try it out."
+#   type: 1
+
+
+
+
+# l10:
+#   id: 10
+#   content: "(P.S. This equation has two complex roots as well but we cannot use bisection method for it. In case you're curious, we use the Lehmer-Schur algorithm, a generalization of the bisection method for the complex plane"
+#   type: 1
+
+
+
+
+
+# l26:
+#   id: 26
+#   content:
+#     message: "Will the root be in 1. [-2,0] or in [0,2]?  Hint: Use f(a).f(b) <0"
+#     answer: 2
+#   type: 2
+
+# l27:
+#   id: 27
+#   content: "We can see that f(0) is not zero. So x=0 is not a root"
+#   type: 1
+
+# l28:
+#   id: 28
+#   content: "Let's try the process again"
+#   type: 1
+
+# l29:
+#   id: 29
+#   content:
+#     message: "What will be the mid-point this time?"
+#     answer: 1
+#   type: 2
+
+# l30:
+#   id: 30
+#   content:
+#     message: "Okay! Will the root like in 1. [0,1] or 2. [1,2]?"
+#     answer: 2
+#   type: 2
+
+# l31:
+#   id: 31
+#   content: "You will see that at each step, our interval is getting smaller (by half)"
+#   type: 1
+
+# l32:
+#   id: 32
+#   content: "This means our region of uncertainty is decreasing"
+#   type: 1
+
+# l33:
+#   id: 33
+#   content: "Looking at the graph makes it easy to determine the new interval we shall be focusing on,  but since this is an algorithm, we need to use a numerical approach"
+#   type: 1
+
+# l34:
+#   id: 34
+#   content: "Let c be the midpoint of the interval [a,b] i.e. c=(a+b)/2  and consider the product f(a).f(c)"
+#   type: 1
+
+# l35:
+#   id: 35
+#   content:
+#     message: "If f(a).f(c) < 0 where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+#     answer: 1
+#   type: 2
+
+# l36:
+#   id: 36
+#   content:
+#     message: "What if f(a).f(c) = 0 ?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+#     answer: 3
+#   type: 2
+
+# l37:
+#   id: 37
+#   content:
+#     message: "And finally, if f(a).f(c). > 0, where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+#     answer: 2
+#   type: 2
+
+# l38:
+#   id: 38
+#   content: "Also, you'll notice that after each iteration, our function value is getting closer to zero"
+#   type: 1 
+#   #Itni ganda flow hai, sahi karo isko
+
+
+
+# l05:
+#   id: 5
+#   content: "Now it is important to choose your bracket (or interval) in such a way that only one root lies in the interval"
+#   type: 1
+
+
+# l89:
+#   id: 89
+#   content: "Want to find all the roots?  This whole method can be performed on all the brackets to find  all roots of the polynomial (or zeroes of the function)"
+#   type: 1
+
+# l90:
+#   id: 90
+#   content: "Binary Chopping has one advantage and disadvantage"
+#   type: 1
+
+# l91:
+#   id: 91
+#   content: "Advantage: It always works.  If a root has been bracketed, bisection method will always find the root  As long as the equation is of the form f(x) = 0  Note: f(x) = x will stumble the good ol' bisection method  However, this can be corrected by using f(x)-x = 0 as the new equation"
+#   type: 1
+
+# l92:
+#   id: 92
+#   content: "Disadvantage: It's slow"
+#   type: 1
+
+# l93:
+#   id: 93
+#   content: "It’s the one friend you can always depend on  but is so slothful that you will only call him is there is no one else around. "
+#   type: 1
+
+# l94:
+#   id: 94
+#   content: "In practical terms  We usually don’t have to use bisection method alone.  We use it along with an open method to make it a rather effective tool."
+#   type: 1
+
+# l39:
+#   id: 39
+#   content: "Side-note: We also use the same algorithm with binary search method.  But there is one difference.  We won't tell you what the answer is. That's for you to think :)"
+#   type: 1
+
+# l16:
+#   id: 16
+#   content: "Another Side-Note: We know there's a bisection method. Could there be a trisection method as well?"
+#   type: 1
+
