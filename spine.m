@@ -4,7 +4,7 @@ set(0,'DefaultFigureWindowStyle','docked')
 %Docking by Default
 addpath(genpath('YAMLParser'));
 addpath(genpath('Data_Structures/Heaps/'));
-yml = ParserYAML('BM.yml');
+yml = ParserYAML('BisectionMethod.yml');
 [yml, names, queue] = yml.ReturnYAML();
 l = length(yml);
 tic %Start of timer

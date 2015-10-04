@@ -151,6 +151,16 @@ l49:
   content: "Let us see the solution for the next 5 iterations."
   type: 1 
 
+
+c24:
+  id: 56
+  content:
+    x1: -2
+    x2: 0
+    x3: 2
+  type: 8
+
+
 a51:
   id: 51
   content:
@@ -234,11 +244,11 @@ l53:
     y: x^3 - x -2
     xmin: -5
     xmax: 5
-    x1: 1.5
-    x2: 1.75
+    x1: 1.500
+    x2: 1.750
   type: 5
 
-a07: 
+d07: 
   id: 99
   content:
     x1: 1.625 
@@ -247,7 +257,7 @@ a07:
 b08:
   id: 56
   content:
-    x1: 1.75
+    x1: 1.750
     x2: 1.625
     x3: 1.5
   type: 8
@@ -259,7 +269,7 @@ l54:
     xmin: -5
     xmax: 5
     x1: 1.625
-    x2: 1.5
+    x2: 1.500
   type: 5
 
 a77: 
@@ -271,27 +281,27 @@ a77:
 b09:
   id: 56
   content:
-    x1: 1.625
+    x1: 1.6250
     x2: 1.5625
-    x3: 1.5
+    x3: 1.5000
   type: 8
+
+l56:
+  id: 56
+  content:
+    y: x^3 - x -2
+    xmin: 1.400
+    xmax: 1.600
+    x1: 1.5623
+    x2: 1.5
+  type: 5
 
 l55:
   id: 55
   content: "Now we can stop. NO, but surely we must go on. Let's adjust the graph scales to see what happens"
   type: 1
 
-l56:
-  id: 56
-  content:
-    y: x^3 - x -2
-    xmin: 1.5
-    xmax: 1.6
-    x1: 1.5625
-    x2: 1.5
-  type: 5
-
-a08: 
+d08: 
   id: 99
   content:
     x1: 1.53125 
@@ -309,13 +319,13 @@ l57:
   id: 57
   content:
     y: x^3 - x -2
-    xmin: 1.5
+    xmin: 1.4
     xmax: 1.6
     x1: 1.53125
     x2: 1.5
   type: 5
 
-a09: 
+d09: 
   id: 99
   content:
     x1: 1.515625 
@@ -333,7 +343,7 @@ l58:
   id: 58
   content:
     y: x^3 - x -2
-    xmin: 1.5
+    xmin: 1.4
     xmax: 1.6
     x1: 1.515625 
     x2: 1.53125
@@ -357,7 +367,7 @@ l59:
   id: 59
   content:
     y: x^3 - x -2
-    xmin: 1.5
+    xmin: 1.4
     xmax: 1.6
     x1: 1.515625 
     x2: 1.523438
@@ -381,7 +391,7 @@ l60:
   id: 60
   content:
     y: x^3 - x -2
-    xmin: 1.5
+    xmin: 1.4
     xmax: 1.6
     x1: 1.519531 
     x2: 1.523438 
@@ -401,11 +411,6 @@ b14:
     x3: 1.519531
   type: 8
 
-l61:
-  id: 61
-  content: "You would say, now we can stop. No, let's go further. Notice the adjusted scale"
-  type: 1
-
 l62:
   id: 62
   content:
@@ -416,13 +421,19 @@ l62:
     x2: 1.521484 
   type: 5
 
+
+l61:
+  id: 61
+  content: "You would say, now we can stop. No, let's go further. Notice the adjusted scale"
+  type: 1
+
 a09: 
   id: 99
   content:
     x1: 1.520508 
   type: 5
 
-b15:
+d15:
   id: 56
   content:
     x1: 1.519531
@@ -518,18 +529,13 @@ a13:
     x1: 1.521423 
   type: 5
 
-b19:
+d19:
   id: 56
   content:
     x1: 1.521484
     x2: 1.521423
     x3: 1.521368
   type: 8
-
-l67:
-  id: 67
-  content: "What about now? EVEN MORE. Keep looking at the scale"
-  type: 1
 
 l68:
   id: 68
@@ -541,13 +547,18 @@ l68:
     x2: 1.521423 
   type: 5
 
+l67:
+  id: 67
+  content: "What about now? EVEN MORE. Keep looking at the scale"
+  type: 1
+
 a14: 
   id: 99
   content:
     x1: 1.521393 
   type: 5
 
-b20:
+d20:
   id: 56
   content:
     x1: 1.521423
@@ -637,24 +648,19 @@ l72:
     x2: 1.521381
   type: 5
 
-a18: 
+d18: 
   id: 99
   content:
     x1: 1.521379 
   type: 5
 
-b24:
+d24:
   id: 56
   content:
     x1: 1.521378
     x2: 1.521379
     x3: 1.521381
   type: 8
-
-l73:
-  id: 73
-  content: "It's becoming pointless. But let's still go further. Look at the scales again"
-  type: 1
 
 l74:
   id: 74
@@ -665,6 +671,11 @@ l74:
     x1: 1.521379 
     x2: 1.521381 
   type: 5
+
+l73:
+  id: 73
+  content: "It's becoming pointless. But let's still go further. Look at the scales again"
+  type: 1
 
 a19: 
   id: 99
@@ -743,198 +754,400 @@ l87:
 
 l88:
   id: 88
+  content: "To learn more about error analysis, go to http://en.wikipedia.org/wiki/Bisection_method#Analysis"
+  type: 1
+
+
+l09:
+  id: 09
+  content: "Plotting graphs is a great way to figure out your initial guess. Here our initial guess was 0, the midpoint of the interval [-2,2] we chose."
+  type: 1
+
+# l97:
+#   id: 96
+#   content: "But we cannot always draw the graph to find our initial guess. It's too time-consuming. So let us use some math."
+#   type: 1
+
+# l14:
+#   id: 14
+#   content: "A quick way to figure out if a root lies in the interval (or bracket) is to see if the product of values of (continuous) polynomial (or function) at both end points is less than zero or not"
+#   type: 1
+
+l15:
+  id: 15
+  content: "i.e. if the interval is [a,b] then f(a).f(b) < 0 tells us that the value of the function at a and at b is opposite"
+  type: 1
+
+l17:
+  id: 17
+  content: "Since the function has opposite signs at the end points, and since it is continuous, by Intermediate Value Theorem, it must have passed through a point at which y=0 in the interval [a,b]"
+  type: 1
+
+l96:
+  id: 96
+  content: "Hence if f(a).f(b) <0, then at least one root lies in the interval [a,b]"
+  type: 1
+
+l12:
+  id: 12
+  content: "f(-2) = -ve and f(2) = +ve in our example. f(-2).f(2) = -ve."
+  type: 1
+
+
+l24:
+  id: 24
+  content: "We split the interval into two at the midpoint 0."
+  type: 1
+
+
+l22:
+  id: 22
+  content: "Now we know that either the root will lie in the left half or in the right half,  since we chose the bracket in such a way that there is just one root."
+  type: 1
+
+l23:
+  id: 23
+  content: " Let's try it out."
+  type: 1
+
+
+l26:
+  id: 26
   content:
-    message: "To learn more about error analysis, go to http://en.wikipedia.org/wiki/Bisection_method#Analysis"
+    message: "Will the root be in 1. [-2,0] or in [0,2]?  Hint: Use f(a).f(b) <0"
+    answer: 2
+  type: 2
+
+l27:
+  id: 27
+  content: "We can see that f(0) is not zero. So x=0 is not a root"
+  type: 1
+
+l28:
+  id: 28
+  content: "Let's try the process again"
+  type: 1
+
+l29:
+  id: 29
+  content:
+    message: "What will be the mid-point this time?"
+    answer: 1
+  type: 2
+
+l30:
+  id: 30
+  content:
+    message: "Okay! Will the root like in 1. [0,1] or 2. [1,2]?"
+    answer: 2
+  type: 2
+
+l31:
+  id: 31
+  content: "You will see that at each step, our interval is getting smaller (by half)"
+  type: 1
+
+l32:
+  id: 32
+  content: "This means our region of uncertainty is decreasing"
+  type: 1
+
+l33:
+  id: 33
+  content: "Looking at the graph makes it easy to determine the new interval we shall be focusing on,  but since this is an algorithm, we need to use a numerical approach"
+  type: 1
+
+l34:
+  id: 34
+  content: "Let c be the midpoint of the interval [a,b] i.e. c=(a+b)/2  and consider the product f(a).f(c)"
+  type: 1
+
+l35:
+  id: 35
+  content:
+    message: "If f(a).f(c) < 0 where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+    answer: 1
+  type: 2
+
+l36:
+  id: 36
+  content:
+    message: "What if f(c) = 0 ?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+    answer: 3
+  type: 2
+
+l37:
+  id: 37
+  content:
+    message: "And finally, if f(a).f(c). > 0, where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
+    answer: 2
+  type: 2
+
+l38:
+  id: 38
+  content: "Also, you'll notice that after each iteration, our function value is getting closer to zero"
+  type: 1 
+
+e01:
+  id: 01
+  content: "Let's look at the graph one more time and link it to our numerical method"
   type: 1
 
 
 
-# l09:
-#   id: 9
-#   content: "Plotting graphs is a great way to figure out your initial guess. Here our initial guess is 0, the midpoint of the interval we chose."
-#   type: 1
+f01:
+  id: 1
+  content: "Let us consider x^3 - x -2 again"
+  type: 1
 
-# l96:
-#   id:96
-#   content: "But we cannot always draw the graph to find our initial guess. It's too time-consuming. So let us use some math."
-
-# l14:
-#   id: 14
-#   content: "A quick way to figure out if a root lies in the interval (or bracket) is to see if the product of values of polynomial (or function) at both end points is less than zero or not"
-#   type: 1
-
-# l15:
-#   id: 15
-#   content: "i.e. if the interval is [a,b] then f(a).f(b) < 0 tells us that the value of the function at a and at b is opposite"
-#   type: 1
-
-# l17:
-#   id: 17
-#   content: "Since the function has opposite signs at the end points, and since it is continuous, by Intermediate Value Theorem, it must have passed through a point at which y=0 in the interval [a,b]"
-#   type: 1
-
-# l96:
-#   id: 96
-#   content: "Hence if f(a).f(b) <0, then at least one root lies in the interval [a,b]"
-
-# l12:
-#   id: 12
-#   content: "f(-2) = -ve and f(2) = +ve in our example. f(-2).f(2) = -ve. Let's find the root now"
-#   type: 1
+f02:
+  id: 7
+  content:
+    y:  x^3 -x-2
+    xmin: -5
+    xmax: 5
+    hold: 1
+  type: 5
 
 
-# l24:
-#   id: 24
-#   content: "Repeating the same procedure. We split the interval into two at the midpoint 0."
-#   type: 1
-
-##Actually repeat the procedure for this
-
-# l22:
-#   id: 22
-#   content: "Now we know that either the root will lie in the left half or in the right half,  since we chose the bracket in such a way that there is just one root."
-#   type: 1
-
-# l23:
-#   id: 23
-#   content: " Let's try it out."
-#   type: 1
+f04:
+  id: 11
+  content:
+    x1: -2
+    x2: 2
+  type: 5
 
 
+g01:
+  id: 01
+  content: "f(-2) = -ve, f(2) = +ve | f(-2).f(2) = -ve | f(0)= -2 | So root is in [0,2] as f(0).f(2) = -ve"
+  type: 4
+
+f08: 
+  id: 99
+  content:
+    x1: 0 
+  type: 5
 
 
-# l10:
-#   id: 10
-#   content: "(P.S. This equation has two complex roots as well but we cannot use bisection method for it. In case you're curious, we use the Lehmer-Schur algorithm, a generalization of the bisection method for the complex plane"
-#   type: 1
+f11:
+  id: 56
+  content:
+    x1: -2
+    x2: 0
+    x3: 2
+  type: 8
+
+
+f12:
+  id: 51
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 0
+    x2: 2
+  type: 5
+
+
+g02:
+  id: 03
+  content: "f(0) = -ve, f(2) = +ve | f(0).f(2) = -ve | f(1)= -2 | So root is in [1,2] as f(1).f(2) = -ve"
+  type: 4
+
+f13: 
+  id: 99
+  content:
+    x1: 1 
+  type: 5
+
+f14:
+  id: 56
+  content:
+    x1: 0
+    x2: 1
+    x3: 2
+  type: 8
+
+f15:
+  id: 51
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1
+    x2: 2
+  type: 5
+
+
+g05:
+  id: 05
+  content: "f(1) = -ve, f(2) = +ve | f(1).f(2) = -ve | f(1.5)= -0.125 | So root is in [1.5,2] as f(1.5).f(2) = -ve"
+  type: 4
+
+f16: 
+  id: 99
+  content:
+    x1: 1.5 
+  type: 5
+
+f17:
+  id: 56
+  content:
+    x1: 1
+    x2: 1.5
+    x3: 2
+  type: 8
+
+f18:
+  id: 52
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.5
+    x2: 2
+  type: 5
+
+
+g06:
+  id: 06
+  content: "f(1.5) = -ve, f(2) = +ve | f(1.5).f(2) = -ve | f(1.75)= 1.6094 | So root is in [1.5,1.75] as f(1.5).f(1.75) = -ve"
+  type: 4
+
+f20: 
+  id: 99
+  content:
+    x1: 1.75 
+  type: 5
+
+f21:
+  id: 56
+  content:
+    x1: 2
+    x2: 1.75
+    x3: 1.5
+  type: 8
+
+f22:
+  id: 53
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.500
+    x2: 1.750
+  type: 5
+
+
+g07:
+  id: 7
+  content: "f(1.5) = -ve, f(1.75) = +ve | f(1.5).f(1.75) = -ve | f(1.625)= 0.666 | So root is in [1.5,1.625] as f(1.5).f(1.625) = -ve"
+  type: 4
+
+f23: 
+  id: 99
+  content:
+    x1: 1.625 
+  type: 5
+
+f24:
+  id: 56
+  content:
+    x1: 1.750
+    x2: 1.625
+    x3: 1.5
+  type: 8
+
+f25:
+  id: 54
+  content:
+    y: x^3 - x -2
+    xmin: -5
+    xmax: 5
+    x1: 1.625
+    x2: 1.500
+  type: 5
+
+
+g08:
+  id: 08
+  content: "f(1.5) = -ve, f(1.625) = +ve | f(1.5).f(1.625) = -ve | f(1.5625)= 0.2522 | So root is in [1.5,1.5625] as f(1.5).f(1.5625) = -ve"
+  type: 4
+
+f26: 
+  id: 99
+  content:
+    x1: 1.5625 
+  type: 5
+
+f27:
+  id: 56
+  content:
+    x1: 1.6250
+    x2: 1.5625
+    x3: 1.5000
+  type: 8
+
+f29:
+  id: 55
+  content: "Got how things work?"
+  type: 1
+
+
+l90:
+  id: 90
+  content: "Binary Chopping has one advantage and disadvantage"
+  type: 1
+
+l91:
+  id: 91
+  content: "Advantage: It always works.  If a root has been bracketed, bisection method will always find the root  As long as the equation is of the form f(x) = 0  Note: f(x) = x will stumble the good ol' bisection method  However, this can be corrected by using f(x)-x = 0 as the new equation"
+  type: 1
+
+l92:
+  id: 92
+  content: "Disadvantage: It's slow"
+  type: 1
+
+l93:
+  id: 93
+  content: "It's the one friend you can always depend on  but is so slothful that you will only call him is there is no one else around. "
+  type: 1
+
+l94:
+  id: 94
+  content: "In practical terms  We usually don’t have to use bisection method alone.  We use it along with an open method to make it a rather effective tool."
+  type: 1
+
+
+l10:
+  id: 10
+  content: "Passing Remark #1: This equation has two complex roots as well but we cannot use bisection method for it. In case you're curious, we use the Lehmer-Schur algorithm, a generalization of the bisection method for the complex plane"
+  type: 1
 
 
 
+l05:
+  id: 5
+  content: "Passing Remark #2: it is important to choose your bracket (or interval) in such a way that only one root lies in the interval"
+  type: 1
 
 
-# l26:
-#   id: 26
-#   content:
-#     message: "Will the root be in 1. [-2,0] or in [0,2]?  Hint: Use f(a).f(b) <0"
-#     answer: 2
-#   type: 2
-
-# l27:
-#   id: 27
-#   content: "We can see that f(0) is not zero. So x=0 is not a root"
-#   type: 1
-
-# l28:
-#   id: 28
-#   content: "Let's try the process again"
-#   type: 1
-
-# l29:
-#   id: 29
-#   content:
-#     message: "What will be the mid-point this time?"
-#     answer: 1
-#   type: 2
-
-# l30:
-#   id: 30
-#   content:
-#     message: "Okay! Will the root like in 1. [0,1] or 2. [1,2]?"
-#     answer: 2
-#   type: 2
-
-# l31:
-#   id: 31
-#   content: "You will see that at each step, our interval is getting smaller (by half)"
-#   type: 1
-
-# l32:
-#   id: 32
-#   content: "This means our region of uncertainty is decreasing"
-#   type: 1
-
-# l33:
-#   id: 33
-#   content: "Looking at the graph makes it easy to determine the new interval we shall be focusing on,  but since this is an algorithm, we need to use a numerical approach"
-#   type: 1
-
-# l34:
-#   id: 34
-#   content: "Let c be the midpoint of the interval [a,b] i.e. c=(a+b)/2  and consider the product f(a).f(c)"
-#   type: 1
-
-# l35:
-#   id: 35
-#   content:
-#     message: "If f(a).f(c) < 0 where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
-#     answer: 1
-#   type: 2
-
-# l36:
-#   id: 36
-#   content:
-#     message: "What if f(a).f(c) = 0 ?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
-#     answer: 3
-#   type: 2
-
-# l37:
-#   id: 37
-#   content:
-#     message: "And finally, if f(a).f(c). > 0, where does the root lie?  1. [a,c] 2. [c,b] 3. At c 4. Cannot be determined"
-#     answer: 2
-#   type: 2
-
-# l38:
-#   id: 38
-#   content: "Also, you'll notice that after each iteration, our function value is getting closer to zero"
-#   type: 1 
-#   #Itni ganda flow hai, sahi karo isko
+l89:
+  id: 89
+  content: "Passing Remark #3: Want to find all the roots?  This whole method can be performed on all the brackets to find  all roots of the polynomial (or zeroes of the function)"
+  type: 1
 
 
 
-# l05:
-#   id: 5
-#   content: "Now it is important to choose your bracket (or interval) in such a way that only one root lies in the interval"
-#   type: 1
+l39:
+  id: 39
+  content: "To Think About: We also use the same algorithm with binary search method.  But there is one difference.  We won't tell you what the answer is. That's for you to think :)"
+  type: 1
 
-
-# l89:
-#   id: 89
-#   content: "Want to find all the roots?  This whole method can be performed on all the brackets to find  all roots of the polynomial (or zeroes of the function)"
-#   type: 1
-
-# l90:
-#   id: 90
-#   content: "Binary Chopping has one advantage and disadvantage"
-#   type: 1
-
-# l91:
-#   id: 91
-#   content: "Advantage: It always works.  If a root has been bracketed, bisection method will always find the root  As long as the equation is of the form f(x) = 0  Note: f(x) = x will stumble the good ol' bisection method  However, this can be corrected by using f(x)-x = 0 as the new equation"
-#   type: 1
-
-# l92:
-#   id: 92
-#   content: "Disadvantage: It's slow"
-#   type: 1
-
-# l93:
-#   id: 93
-#   content: "It’s the one friend you can always depend on  but is so slothful that you will only call him is there is no one else around. "
-#   type: 1
-
-# l94:
-#   id: 94
-#   content: "In practical terms  We usually don’t have to use bisection method alone.  We use it along with an open method to make it a rather effective tool."
-#   type: 1
-
-# l39:
-#   id: 39
-#   content: "Side-note: We also use the same algorithm with binary search method.  But there is one difference.  We won't tell you what the answer is. That's for you to think :)"
-#   type: 1
-
-# l16:
-#   id: 16
-#   content: "Another Side-Note: We know there's a bisection method. Could there be a trisection method as well?"
-#   type: 1
+l16:
+  id: 16
+  content: "Another thing to Think About: We know there's a bisection method. Could there be a trisection method as well?"
+  type: 1
 

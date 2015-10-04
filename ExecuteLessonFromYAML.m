@@ -128,7 +128,7 @@ classdef ExecuteLessonFromYAML
           if ans == 'Y' || ans == 'y'
           web(link,'-browser');
           end
-          
+          fprintf('\n');
           pause;
        end
        
