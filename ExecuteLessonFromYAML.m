@@ -115,7 +115,7 @@ classdef ExecuteLessonFromYAML
                 hold on;
             else
                 hold off;
-            end;
+            end
             pause;
                           
        end
@@ -124,8 +124,8 @@ classdef ExecuteLessonFromYAML
           message = LessonContentobj.content.message;
           link = LessonContentobj.content.link;
           disp(message);
-          ans = input('Would you like to see the video? (y/n): ','s');
-          if ans == 'Y' || ans == 'y'
+          answer = input('Would you like to see the video? (y/n): ','s');
+          if answer == 'Y' || answer == 'y'
           web(link,'-browser');
           end
           fprintf('\n');
@@ -168,6 +168,12 @@ classdef ExecuteLessonFromYAML
             x2 = LessonContentobj.content.x2;
             x3 = LessonContentobj.content.x3;
             Shade(x1,x2,x3);
+            PlotFieldName =char(fieldnames(LessonContentobj.content));
+            if (DoesFieldExist(PlotFieldName,'hold'))
+                hold on;
+            else
+                hold off;
+            end
         end
        
       function  CheckObjectType(obj,LessonContentobj)  

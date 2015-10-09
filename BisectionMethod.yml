@@ -45,6 +45,7 @@ l07:
     xmin: -5
     xmax: 5
     hold: 1
+    hold: 1
   type: 5
 
 l08:
@@ -57,6 +58,8 @@ l11:
   content:
     x1: -2
     x2: 2
+    hold: 1
+    hold: 1
   type: 5
 
 l18:
@@ -78,6 +81,7 @@ l99:
   id: 99
   content:
     x1: 0 
+    hold: 1
   type: 5
 
 l21:
@@ -169,12 +173,14 @@ a51:
     xmax: 5
     x1: 0
     x2: 2
+    hold: 1
   type: 5
 
 a03: 
   id: 99
   content:
     x1: 1 
+    hold: 1
   type: 5
 
 b04:
@@ -193,12 +199,14 @@ l51:
     xmax: 5
     x1: 1
     x2: 2
+    hold: 1
   type: 5
 
 a04: 
   id: 99
   content:
     x1: 1.5 
+    hold: 1
   type: 5
 
 b06:
@@ -217,6 +225,7 @@ a05:
     xmax: 5
     x1: 1.5
     x2: 2
+    hold: 1
   type: 5
 
 b49:
@@ -228,6 +237,7 @@ a06:
   id: 99
   content:
     x1: 1.75 
+    hold: 1
   type: 5
 
 b07:
@@ -246,12 +256,14 @@ l53:
     xmax: 5
     x1: 1.500
     x2: 1.750
+    hold: 1
   type: 5
 
 d07: 
   id: 99
   content:
     x1: 1.625 
+    hold: 1
   type: 5
 
 b08:
@@ -270,12 +282,14 @@ l54:
     xmax: 5
     x1: 1.625
     x2: 1.500
+    hold: 1
   type: 5
 
 a77: 
   id: 99
   content:
     x1: 1.5625 
+    hold: 1
   type: 5
 
 b09:
@@ -294,6 +308,7 @@ l56:
     xmax: 1.600
     x1: 1.5623
     x2: 1.5
+    hold: 1
   type: 5
 
 l55:
@@ -305,6 +320,7 @@ d08:
   id: 99
   content:
     x1: 1.53125 
+    hold: 1
   type: 5
 
 b10:
@@ -323,12 +339,14 @@ l57:
     xmax: 1.6
     x1: 1.53125
     x2: 1.5
+    hold: 1
   type: 5
 
 d09: 
   id: 99
   content:
     x1: 1.515625 
+    hold: 1
   type: 5
 
 b11:
@@ -347,12 +365,14 @@ l58:
     xmax: 1.6
     x1: 1.515625 
     x2: 1.53125
+    hold: 1
   type: 5
 
 a07: 
   id: 99
   content:
     x1: 1.523438 
+    hold: 1
   type: 5
 
 b12:
@@ -371,12 +391,14 @@ l59:
     xmax: 1.6
     x1: 1.515625 
     x2: 1.523438
+    hold: 1
   type: 5
 
 a07: 
   id: 99
   content:
     x1: 1.519531 
+    hold: 1
   type: 5
 
 b13:
@@ -395,12 +417,14 @@ l60:
     xmax: 1.6
     x1: 1.519531 
     x2: 1.523438 
+    hold: 1
   type: 5
 
 a08: 
   id: 99
   content:
     x1: 1.521484 
+    hold: 1
   type: 5
 
 b14:
@@ -419,6 +443,7 @@ l62:
     xmax: 1.522
     x1: 1.519531 
     x2: 1.521484 
+    hold: 1
   type: 5
 
 
@@ -431,6 +456,7 @@ a09:
   id: 99
   content:
     x1: 1.520508 
+    hold: 1
   type: 5
 
 d15:
@@ -438,7 +464,7 @@ d15:
   content:
     x1: 1.519531
     x2: 1.520508
-    x3: 1.52484
+    x3: 1.524840
   type: 8
 
 l63:
@@ -449,12 +475,14 @@ l63:
     xmax: 1.522
     x1: 1.520508 
     x2: 1.521484 
+    hold: 1
   type: 5
 
 a10: 
   id: 99
   content:
     x1: 1.520996 
+    hold: 1
   type: 5
 
 b16:
@@ -473,12 +501,14 @@ l64:
     xmax: 1.522
     x1: 1.520996 
     x2: 1.521484 
+    hold: 1
   type: 5
 
 a11: 
   id: 99
   content:
     x1: 1.521240 
+    hold: 1
   type: 5
 
 b17:
@@ -497,12 +527,14 @@ l65:
     xmax: 1.522
     x1: 1.521240 
     x2: 1.521484 
+    hold: 1
   type: 5
 
 a12: 
   id: 99
   content:
     x1: 1.521362 
+    hold: 1
   type: 5
 
 b18:
@@ -521,12 +553,14 @@ l66:
     xmax: 1.522
     x1: 1.521362 
     x2: 1.521484
+    hold: 1
   type: 5
 
 a13: 
   id: 99
   content:
     x1: 1.521423 
+    hold: 1
   type: 5
 
 d19:
@@ -545,6 +579,7 @@ l68:
     xmax: 1.5215
     x1: 1.521362 
     x2: 1.521423 
+    hold: 1
   type: 5
 
 l67:
@@ -556,6 +591,7 @@ a14:
   id: 99
   content:
     x1: 1.521393 
+    hold: 1
   type: 5
 
 d20:
@@ -574,12 +610,14 @@ l69:
     xmax: 1.5215
     x1: 1.521362 
     x2: 1.521393 
+    hold: 1
   type: 5
 
 a15: 
   id: 99
   content:
     x1: 1.521378 
+    hold: 1
   type: 5
 
 b21:
@@ -598,12 +636,14 @@ l70:
     xmax: 1.5215
     x1: 1.521378 
     x2: 1.521393 
+    hold: 1
   type: 5
 
 a16: 
   id: 99
   content:
     x1: 1.521385 
+    hold: 1
   type: 5
 
 b22:
@@ -622,12 +662,14 @@ l71:
     xmax: 1.5215
     x1: 1.521378 
     x2: 1.521385
+    hold: 1
   type: 5
 
 a17: 
   id: 99
   content:
     x1: 1.521381 
+    hold: 1
   type: 5
 
 b23:
@@ -646,12 +688,14 @@ l72:
     xmax: 1.5215
     x1: 1.521378 
     x2: 1.521381
+    hold: 1
   type: 5
 
 d18: 
   id: 99
   content:
     x1: 1.521379 
+    hold: 1
   type: 5
 
 d24:
@@ -670,6 +714,7 @@ l74:
     xmax: 1.52139
     x1: 1.521379 
     x2: 1.521381 
+    hold: 1
   type: 5
 
 l73:
@@ -681,6 +726,7 @@ a19:
   id: 99
   content:
     x1: 1.521380 
+    hold: 1
   type: 5
 
 b24:
@@ -699,12 +745,14 @@ l75:
     xmax: 1.52139
     x1: 1.521379 
     x2: 1.521380 
+    hold: 1
   type: 5
 
 a20: 
   id: 99
   content:
     x1: 1.521380 
+    hold: 1
   type: 5
 
 l79:
@@ -907,6 +955,7 @@ f02:
     xmin: -5
     xmax: 5
     hold: 1
+    hold: 1
   type: 5
 
 
@@ -915,6 +964,7 @@ f04:
   content:
     x1: -2
     x2: 2
+    hold: 1
   type: 5
 
 
@@ -927,6 +977,7 @@ f08:
   id: 99
   content:
     x1: 0 
+    hold: 1
   type: 5
 
 
@@ -947,6 +998,7 @@ f12:
     xmax: 5
     x1: 0
     x2: 2
+    hold: 1
   type: 5
 
 
@@ -959,6 +1011,7 @@ f13:
   id: 99
   content:
     x1: 1 
+    hold: 1
   type: 5
 
 f14:
@@ -977,6 +1030,7 @@ f15:
     xmax: 5
     x1: 1
     x2: 2
+    hold: 1
   type: 5
 
 
@@ -989,6 +1043,7 @@ f16:
   id: 99
   content:
     x1: 1.5 
+    hold: 1
   type: 5
 
 f17:
@@ -1007,6 +1062,7 @@ f18:
     xmax: 5
     x1: 1.5
     x2: 2
+    hold: 1
   type: 5
 
 
@@ -1019,6 +1075,7 @@ f20:
   id: 99
   content:
     x1: 1.75 
+    hold: 1
   type: 5
 
 f21:
@@ -1037,6 +1094,7 @@ f22:
     xmax: 5
     x1: 1.500
     x2: 1.750
+    hold: 1
   type: 5
 
 
@@ -1049,6 +1107,7 @@ f23:
   id: 99
   content:
     x1: 1.625 
+    hold: 1
   type: 5
 
 f24:
@@ -1067,6 +1126,7 @@ f25:
     xmax: 5
     x1: 1.625
     x2: 1.500
+    hold: 1
   type: 5
 
 
@@ -1079,6 +1139,7 @@ f26:
   id: 99
   content:
     x1: 1.5625 
+    hold: 1
   type: 5
 
 f27:
