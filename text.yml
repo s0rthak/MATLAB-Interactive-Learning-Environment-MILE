@@ -1,5 +1,11 @@
+#Structure for Lesson Plan
+
+#Please start each line with l + index of line. For example: l1 means the 1st line l5 means the 5th line
+# Each line will have three parts id, content and type. Content may have addition parameters depending on the type
+
+
 #Type 1:
-#Type 2:
+#Type 2: Input
 #Type 3:
 #Type 4:
 #Type 5: Graph
@@ -30,7 +36,9 @@ l4:
 
 l5:
   id: 5
-  content: Now you do one. What are the first 6 digits of 22/7\n
+  content: 
+    message: Now you do one. What are the first 6 digits of 22/7\n
+    answer: 3.142857
   type: 2
 
 l6:

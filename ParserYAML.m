@@ -7,7 +7,7 @@ classdef ParserYAML
     properties (SetAccess = 'private')
         %Add properties here if and when needed
         AllowedHeads = cellstr(['id     ';'content';'type   ']);
-        AllowedTypes = [1,2,3,4,5,6,7];
+        AllowedTypes = [1,2,3,4,5,6,7,8];
         AllowedGraphArgs = '^(x1|x2|y|xmin|ymax|hold)$';
         YAMLStruct;
         YAMLStructNames;
