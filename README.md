@@ -1,6 +1,6 @@
 # MILE: MATLAB Interactive Learning Environment
 
-MILE is project to help students of our college learn MATLAB while brushing up on their theory
+MILE is a project to help students of our college learn MATLAB while brushing up on their theory
 A sample path is included which teaches Bisection Method. We made that path specifically for Scientific Computing that is taught in 4th sem of our college. 
 
 Lesson Builder for MILE: https://github.com/xssChauhan/MILE-Mason
